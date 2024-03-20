@@ -50,6 +50,13 @@ public class Ejercicio3 {
         }
         return tarifaPorHora;
     }
+
+    /**
+     * Método que calcula el sueldo dado unas horas trabajadas y una tarifa por hora
+     * @param horasTrabajadas horas que el usuario ha trabajado
+     * @param tarifaPorHora tarifa por hora del usuario
+     * @return devuelve el salario calculado
+     */
     public static double calcularSueldo(int horasTrabajadas, double tarifaPorHora) {
 
         double sueldo = 0;
@@ -64,6 +71,10 @@ public class Ejercicio3 {
         return sueldo;
     }
 
+    /**
+     * Metodo donde se obtiene el salario y se gestionan errores
+     * @return devuelve el salario calculado o 0 si da error
+     */
     public static double obtenerSalario() {
 
         System.out.println("-- ALGORITMO CALCULO DEL SALARIO DEL TRABAJADOR -- ");
