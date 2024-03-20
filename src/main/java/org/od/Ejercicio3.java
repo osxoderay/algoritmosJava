@@ -13,13 +13,13 @@ public class Ejercicio3 {
         while (true) {
             System.out.print("Escriba las horas que ha trabajado: " + "\n");
             while (!scanner.hasNextInt()) {
-                System.out.println("Por favor, ingrese un número entero válido para las horas trabajadas.");
+                System.out.println("Error! Por favor, ingrese un número entero válido para las horas trabajadas.");
                 scanner.next();
                 System.out.print("Escriba las horas que ha trabajado: ");
             }
             horasTrabajadas = scanner.nextInt();
             if (horasTrabajadas < 0) {
-                System.out.println("El número de horas trabajadas no puede ser negativo. Por favor, inténtelo de nuevo.");
+                System.out.println("Error! El número de horas trabajadas no puede ser negativo. Por favor, inténtelo de nuevo.");
             } else {
                 break;
             }
@@ -37,13 +37,13 @@ public class Ejercicio3 {
         while (true) {
             System.out.print("Escriba la tarifa por hora: " + "\n");
             while (!scanner.hasNextDouble()) {
-                System.out.println("Por favor, ingrese un número válido para la tarifa por hora.");
+                System.out.println("Error! Por favor, ingrese un número válido para la tarifa por hora.");
                 scanner.next();
                 System.out.print("Escriba la tarifa por hora: ");
             }
             tarifaPorHora = scanner.nextDouble();
             if (tarifaPorHora < 0) {
-                System.out.println("La tarifa por hora no puede ser un número negativo. Por favor, inténtelo de nuevo.");
+                System.out.println("Error! La tarifa por hora no puede ser un número negativo. Por favor, inténtelo de nuevo.");
             } else {
                 break;
             }
