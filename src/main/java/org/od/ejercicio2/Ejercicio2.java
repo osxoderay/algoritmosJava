@@ -13,9 +13,8 @@ public class Ejercicio2 {
 
         for (int i = 0; i < 50; i++) {
             personas[i] = new Persona();
-            // Genera un genero aleatorio
+            // Genera un genero y edad aleatorios
             personas[i].genero = random.nextBoolean() ? 'M' : 'F';
-            // Genera una edad aleatoria entre 0 y 99
             personas[i].edad = random.nextInt(100);
         }
     }
@@ -31,20 +30,20 @@ public class Ejercicio2 {
             System.out.println("Persona nº" + (i + 1) + ": Género: " + personas[i].genero + ", Edad: " + personas[i].edad);
         }
 
-        int mayoresDeEdad = 0;
-        int menoresDeEdad = 0;
+        int mayoresEdad = 0;
+        int menoresEdad = 0;
         int hombresMayores = 0;
         int mujeresMenores = 0;
         int totalMujeres = 0;
 
         for (Persona persona : personas) {
             if (persona.edad >= 18) {
-                mayoresDeEdad++;
+                mayoresEdad++;
                 if (persona.genero == 'M') {
                     hombresMayores++;
                 }
             } else {
-                menoresDeEdad++;
+                menoresEdad++;
                 if (persona.genero == 'F') {
                     mujeresMenores++;
                 }
@@ -55,12 +54,12 @@ public class Ejercicio2 {
         }
 
 
-        double porcentajeMayores = ((double) mayoresDeEdad / personas.length) * 100;
+        double porcentajeMayores = ((double) mayoresEdad / personas.length) * 100;
         double porcentajeMujeres = ((double) totalMujeres / personas.length) * 100;
 
         System.out.println(" - CLASIFICACION -");
-        System.out.println("Cantidad de personas mayores de edad: " + mayoresDeEdad);
-        System.out.println("Cantidad de personas menores de edad: " + menoresDeEdad);
+        System.out.println("Cantidad de personas mayores de edad: " + mayoresEdad);
+        System.out.println("Cantidad de personas menores de edad: " + menoresEdad);
         System.out.println("Cantidad de personas masculinas mayores de edad: " + hombresMayores);
         System.out.println("Cantidad de personas femeninas menores de edad: " + mujeresMenores);
         System.out.println("Porcentaje que representan las personas mayores de edad: " + porcentajeMayores + "%");
