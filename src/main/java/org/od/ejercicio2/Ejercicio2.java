@@ -4,7 +4,8 @@ import java.util.Random;
 
 public class Ejercicio2 {
 
-    /**
+    /** Para agilizar el proceso he decidido que la mejor opcion para meter datos en Persona sería generandolos aleatoriamente,
+     * en lugar de hacer que el usuario deba introducir 50 personas ya que podría resultar tedioso.
      * Metodo que genera personas con genero y edad de manera aleatorio
      * @param personas donde se guardaran las personas con genero y edad
      */
